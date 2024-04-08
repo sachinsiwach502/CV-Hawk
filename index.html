@@ -11,21 +11,56 @@
 </head>
 
 <body>
-    <header class="header_bg_img min-vh-100">
+    <header class="header_bg_img min-vh-100 d-flex flex-column">
         <nav>
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between">
-                    <img src="./assets/img/png/nav_icon.png" alt="nav-icon">
-                    <div class="d-flex align-items-center gap-41">
+                    <div>
+                        <img src="./assets/img/png/nav_icon.png" alt="nav-icon">
+                    </div>
+                    <div class="d-flex align-items-center gap-41 menu-links menuBar">
+                        <div class="d-lg-none d-flex">
+                            <img src="./assets/img/png/nav_icon.png" alt="nav-icon">
+                        </div>
                         <a href="#home" class="ff-r black fs-18 fw-4 lh-19 nav_links pb-1">Home</a>
                         <a href="#about" class="ff-r black fs-18 fw-4 lh-19 nav_links pb-1">About</a>
                         <a href="#help" class="ff-r black fs-18 fw-4 lh-19 nav_links pb-1">We’ll help you</a>
                         <a href="#testimonials" class="ff-r black fs-18 fw-4 lh-19 nav_links pb-1">Testimonials</a>
+                        <button class="bttn shadow d-md-none d-flex">Get in touch</button>
                     </div>
-                    <button class="bttn shadow">Get in touch</button>
+                    <div class="d-flex align-items-center">
+                        <button class="bttn shadow d-md-flex d-none">Get in touch</button>
+                        <div class="menuIcon">
+                            <span class="first-line"></span>
+                            <span class="sec-line"></span>
+                            <span class="third-line"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
+        <section class="d-flex flex-column align-items-center justify-content-center flex-grow-1 position-relative">
+            <div class="position-absolute rotation-circle">
+                <img src="./assets/img/png/orange_circle.png" alt="rotating-circle" class="w-100">
+            </div>
+            <div class="container d-flex flex-column justify-content-center align-items-center position-relative">
+                <div class="position-absolute main_sec_full_layer w-100 h-100">
+                    <img src="./assets/img/png/main_sec_full_layer.png" alt="background-layer" class="w-100 h-100">
+                </div>
+                <h1 class="text-center ff-r black black fw-6 fs-52 lh-61 max-w-766">Unlock Your Potential with a
+                    Professional CV
+                    Builder</h1>
+                <p class="mt-3 mb-0 ff-r lh-24 fs-16 opacity-75 fw-4 text-center max-w-565">Our user-friendly platform
+                    guides you
+                    through the
+                    process, allowing you to customize every section to align with your
+                    unique career goals.</p>
+                <div class="d-flex mt_40 gap-3">
+                    <button class="bttn shadow">Get Started</button>
+                    <button class="btn_1 shadow">Watch Demo</button>
+                </div>
+            </div>
+        </section>
     </header>
     <main></main>
     <footer></footer>
