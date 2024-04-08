@@ -413,7 +413,16 @@
     right: 0;
     transform: translate(0, -30%);
 }
-.rotation-circle
+
+.rotation-circle {
+    top: 10%;
+    left: 30%;
+}
+
+.rotation-half-circle {
+    right: 5%;
+    top: 40%;
+}
 
 /*-------------------- hover ----------------*/
 .nav_links:hover {
@@ -424,12 +433,14 @@
     background-color: var(--white-color);
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
+    transform: scale(1.11);
 }
 
 .btn_1:hover {
     border: 1px solid transparent;
     background-color: var(--primary-color);
     color: var(--white-color);
+    transform: scale(1.11);
 }
 
 .nav_links:hover::before {
@@ -472,6 +483,7 @@
         top: 0;
         left: -100%;
         background: var(--white-color);
+        z-index: 30;
     }
 
     .menu-links {
@@ -485,6 +497,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        z-index: 31;
     }
 
     .menuIcon span {
@@ -500,5 +513,11 @@
 
     .menuIcon:hover span {
         background-color: var(--primary-color);
+    }
+}
+
+@media (max-width:576px) {
+    .sm-w-100 {
+        width: 100%;
     }
 }
