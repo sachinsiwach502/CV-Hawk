@@ -376,6 +376,16 @@
     padding-bottom: 80px;
 }
 
+.px_160 {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.px_100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 /*-------------- normal css prop --------------------*/
 
 
@@ -394,6 +404,10 @@
     font-weight: 600;
     color: var(--black-color);
     opacity: 1;
+}
+
+.bg_color {
+    background-color: var(--tools-bg-color);
 }
 
 .bttn {
