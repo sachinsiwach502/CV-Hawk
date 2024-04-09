@@ -386,8 +386,23 @@
     padding-bottom: 100px;
 }
 
+.pt-135 {
+    padding-top: 135px;
+}
+
+.pb_160 {
+    padding-bottom: 160px;
+}
+
 /*-------------- normal css prop --------------------*/
 
+.faq_container {
+    max-width: 856px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .tools_bg_img {
     background-image: url(../img/png/tools_bg_img.png);
@@ -436,6 +451,9 @@
     transition: all 300ms linear;
 }
 
+.hidden-text {
+    display: none;
+}
 
 .nav_links {
     transition: all 300ms linear;
