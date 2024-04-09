@@ -358,6 +358,9 @@
     gap: 41px;
 }
 
+.mt_40 {
+    margin-top: 40px;
+}
 
 
 
@@ -409,8 +412,20 @@
     max-width: 565px;
 }
 
-.mt_40 {
-    margin-top: 40px;
+.slick-current .slider-itm {
+    border: 1px solid var(--primary-color);
+}
+
+.slick-current .slider-itm .slick-txt {
+    color: var(--primary-color);
+}
+
+.slider-itm {
+    min-height: 141px;
+    max-width: 156px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-color: var(--white-color);
 }
 
 .main_sec_full_layer {
@@ -429,6 +444,27 @@
     right: 5%;
     top: 40%;
     animation: half-circle 2s infinite;
+}
+
+.pt-141 {
+    padding-top: 141px;
+}
+
+.slick-dots li {
+    width: 23px !important;
+    height: 5px !important;
+    background: rgba(0, 0, 0, 1);
+    border-radius: 6px;
+    opacity: 10%;
+}
+
+.slick-dots li button {
+    display: none !important;
+}
+
+.slick-dots .slick-active {
+    background: var(--primary-color);
+    opacity: 1;
 }
 
 /*-------------------- hover ----------------*/
@@ -561,8 +597,6 @@
 @media (min-width:576px) and (max-width:768px) {
     .underline-1 {
         top: 33%;
-        /* right: 20%;
-            left: 20%; */
         height: 2px;
         background-color: var(--black-color);
         width: 291px;
@@ -570,8 +604,6 @@
 
     .underline-2 {
         top: 43%;
-        /* right: 20%;
-            left: 20%; */
         height: 2px;
         background-color: var(--black-color);
         width: 291px;
@@ -579,8 +611,6 @@
 
     .underline-3 {
         top: 53%;
-        /* right: 20%;
-            left: 20%; */
         height: 2px;
         background-color: var(--black-color);
         width: 291px;
