@@ -47,10 +47,17 @@ $('.slider').slick({
         {
             breakpoint: 992,
             settings: {
-                slidesToShow: 4,
+                slidesToShow: 5,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true
+            }
+        },
+        {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1
             }
         },
         {
@@ -60,10 +67,18 @@ $('.slider').slick({
                 slidesToScroll: 1
             }
         },
+
         {
             breakpoint: 480,
             settings: {
                 slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 366,
+            settings: {
+                slidesToShow: 1,
                 slidesToScroll: 1
             }
         }

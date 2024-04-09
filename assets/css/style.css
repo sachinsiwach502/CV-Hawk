@@ -362,7 +362,13 @@
     margin-top: 40px;
 }
 
+.pt-141 {
+    padding-top: 141px;
+}
 
+.pt_35 {
+    padding-top: 35px;
+}
 
 /*-------------- normal css prop --------------------*/
 
@@ -428,6 +434,12 @@
     background-color: var(--white-color);
 }
 
+.slick-slide div {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
 .main_sec_full_layer {
     top: 0;
     right: 0;
@@ -446,8 +458,10 @@
     animation: half-circle 2s infinite;
 }
 
-.pt-141 {
-    padding-top: 141px;
+
+
+.hidden-img {
+    display: none;
 }
 
 .slick-dots li {
@@ -466,6 +480,7 @@
     background: var(--primary-color);
     opacity: 1;
 }
+
 
 /*-------------------- hover ----------------*/
 .nav_links:hover {
@@ -566,6 +581,10 @@
         left: 0;
     }
 
+    .lg-pt-40 {
+        padding-top: 40px;
+    }
+
     .menuIcon:hover span {
         background-color: var(--primary-color);
     }
@@ -641,5 +660,9 @@
         height: 2px;
         background-color: var(--black-color);
         width: 291px;
+    }
+
+    .hidden-img {
+        display: block;
     }
 }
