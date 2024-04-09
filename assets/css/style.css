@@ -391,9 +391,14 @@
     transition: all 300ms linear;
 }
 
+
 .nav_links {
     transition: all 300ms linear;
     position: relative;
+}
+
+.transition {
+    transition: all 300ms linear;
 }
 
 .max-w-766 {
@@ -417,11 +422,13 @@
 .rotation-circle {
     top: 10%;
     left: 30%;
+    animation: rotation 1s infinite;
 }
 
 .rotation-half-circle {
     right: 5%;
     top: 40%;
+    animation: half-circle 2s infinite;
 }
 
 /*-------------------- hover ----------------*/
@@ -470,13 +477,24 @@
     background-size: cover;
 }
 
+/*----------------------- Animation ---------------*/
+@keyframes rotation {
+    to {
+        transform: rotate(360deg);
+    }
+}
 
+@keyframes half-circle {
+    to {
+        transform: rotate(360deg);
+    }
+}
 
+/*-------------------------------- media screens --------------------------------*/
 @media (max-width:992px) {
     .menuBar {
         justify-content: center;
         flex-direction: column;
-        justify-content: center;
         width: 100%;
         height: 100%;
         position: fixed;
@@ -484,6 +502,7 @@
         left: -100%;
         background: var(--white-color);
         z-index: 30;
+        transition: all 300ms linear;
     }
 
     .menu-links {
@@ -516,8 +535,81 @@
     }
 }
 
+@media (min-width:768px) and (max-width:992px) {
+    .underline-1 {
+        top: 40%;
+        height: 2px;
+        background-color: var(--black-color);
+        width: 291px;
+    }
+
+    .underline-2 {
+        top: 50%;
+        height: 2px;
+        background-color: var(--black-color);
+        width: 291px;
+    }
+
+    .underline-3 {
+        top: 60%;
+        height: 2px;
+        background-color: var(--black-color);
+        width: 291px;
+    }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    .underline-1 {
+        top: 33%;
+        /* right: 20%;
+            left: 20%; */
+        height: 2px;
+        background-color: var(--black-color);
+        width: 291px;
+    }
+
+    .underline-2 {
+        top: 43%;
+        /* right: 20%;
+            left: 20%; */
+        height: 2px;
+        background-color: var(--black-color);
+        width: 291px;
+    }
+
+    .underline-3 {
+        top: 53%;
+        /* right: 20%;
+            left: 20%; */
+        height: 2px;
+        background-color: var(--black-color);
+        width: 291px;
+    }
+}
+
 @media (max-width:576px) {
     .sm-w-100 {
         width: 100%;
+    }
+
+    .underline-1 {
+        top: 43%;
+        height: 2px;
+        background-color: var(--black-color);
+        width: 291px;
+    }
+
+    .underline-2 {
+        top: 53%;
+        height: 2px;
+        background-color: var(--black-color);
+        width: 291px;
+    }
+
+    .underline-3 {
+        top: 63%;
+        height: 2px;
+        background-color: var(--black-color);
+        width: 291px;
     }
 }

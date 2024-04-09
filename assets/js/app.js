@@ -14,6 +14,8 @@ function cross() {
     line_3.classList.add("position-relative");
     line_3.style.top = "-12px";
     line_3.style.transform = "rotate(-45deg)";
+    line_1.classList.add("transition")
+    line_3.classList.add("transition")
 }
 function line() {
     line_2.classList.remove("d-none");
