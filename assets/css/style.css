@@ -423,6 +423,15 @@
     padding-top: 150px;
 }
 
+.pt_43 {
+    padding-top: 43px;
+}
+
+.py_80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
 /*-------------- normal css prop --------------------*/
 
 .faq_container {
@@ -552,10 +561,22 @@
     background-color: var(--white-color);
 }
 
-.slick-slide div {
+.slick-slide>div {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+}
+
+.next,
+.prev {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms linear;
 }
 
 .main_sec_full_layer {
@@ -570,17 +591,39 @@
     animation: rotation 1s infinite;
 }
 
+.text_box {
+    max-width: 357px;
+    min-height: 104px;
+    opacity: 80%;
+    border-radius: 10px;
+}
+
+.text_box_2 {
+    max-width: 357px;
+    min-height: 104px;
+    opacity: 80%;
+    border-radius: 10px;
+}
+
 .rotation-half-circle {
     right: 5%;
     top: 40%;
     animation: half-circle 2s infinite;
 }
 
-
+.container-slider {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
 
 .hidden-img {
     display: none;
 }
+
+
 
 .slick-dots li {
     width: 23px !important;
@@ -603,6 +646,22 @@
 /*-------------------- hover ----------------*/
 .nav_links:hover {
     color: var(--primary-color);
+}
+
+.prev:hover {
+    background-color: var(--primary-color);
+}
+
+.prev:hover svg path {
+    fill: var(--white-color);
+}
+
+.next:hover {
+    background-color: var(--primary-color);
+}
+
+.next:hover svg path {
+    fill: var(--white-color);
 }
 
 .bttn:hover {
@@ -641,6 +700,21 @@
     transform: translateX(-50%);
 }
 
+.text_box::before {
+    content: url(../img/png/white-trangle.png);
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    transform: translate(20px, 32px);
+}
+
+.text_box_2::before {
+    content: url(../img/png/white-trangle.png);
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    transform: translate(20px, 32px);
+}
 
 /*--------------- bg_img -----------------*/
 .header_bg_img {
@@ -648,6 +722,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.clients-bg-img {
+    background-image: url(../img/png/slider-bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /*----------------------- Animation ---------------*/
@@ -756,6 +837,16 @@
         background-color: var(--black-color);
         width: 291px;
     }
+
+    .prev {
+        bottom: 4%;
+        left: 40%;
+    }
+
+    .next {
+        bottom: 4%;
+        right: 40%;
+    }
 }
 
 @media (max-width:576px) {
@@ -792,6 +883,16 @@
         min-height: 400px;
     }
 
+    .prev {
+        bottom: 4%;
+        left: 30%;
+    }
+
+    .next {
+        bottom: 4%;
+        right: 30%;
+    }
+
     .sm-fs-30 {
         font-size: var(--fs-30);
     }
@@ -817,7 +918,8 @@
         align-items: center;
         justify-content: center;
     }
-    .sm-lh-54{
+
+    .sm-lh-54 {
         line-height: lh-54;
     }
 }
@@ -827,12 +929,52 @@
         padding-left: 135px;
         padding-right: 135px;
     }
+
+    .prev {
+        top: 50%;
+        left: 0;
+    }
+
+    .next {
+        top: 50%;
+        right: 0;
+    }
+}
+
+
+@media (max-width:768px) {
+    .text_box_2::before {
+        content: url(../img/png/white-trangle.png);
+        position: absolute;
+        left: 5px;
+        bottom: 0;
+        transform: translate(73px, 33px);
+    }
+
+
+    .md_py_70 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
 }
 
 @media (min-width:992px) {
-
     .px-235 {
         padding-left: 235px;
         padding-right: 235px;
+    }
+
+}
+
+@media (min-width:1200px) {
+    .prev {
+        top: 50%;
+        left: -30px;
+    }
+
+    .next {
+        top: 50%;
+        right: -30px;
     }
 }
