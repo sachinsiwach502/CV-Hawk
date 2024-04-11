@@ -432,6 +432,10 @@
     padding-bottom: 80px;
 }
 
+.mt-37 {
+    margin-top: 37px !important;
+}
+
 /*-------------- normal css prop --------------------*/
 
 .faq_container {
@@ -450,12 +454,6 @@
     padding-right: 12px;
 }
 
-.tools_bg_img {
-    background-image: url(../img/png/tools_bg_img.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .text-primry {
     color: var(--primary-color);
@@ -476,6 +474,39 @@
     height: 1px;
     background-color: var(--white-color);
     opacity: 90%;
+}
+
+.theme_left_0 {
+    left: 0;
+    top: 0;
+    transform: translate(0px, -30%);
+}
+
+.theme_righ_0 {
+    right: 0;
+    top: 30%;
+}
+
+.help_right_0 {
+    right: 0;
+    top: 0;
+    transform: translate(0px, -15%);
+}
+
+.help_left_0 {
+    left: 0;
+    bottom: 0;
+    transform: translate(0px, 30%);
+}
+
+.resume_full_ellips {
+    top: 20%;
+    right: 10%;
+}
+
+.resume_ellips {
+    right: 0;
+    top: 0;
 }
 
 .bg_color {
@@ -729,6 +760,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.tools_bg_img {
+    background-image: url(../img/png/tools_bg_img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*----------------------- Animation ---------------*/
