@@ -394,6 +394,35 @@
     padding-bottom: 160px;
 }
 
+.pt_50 {
+    padding-top: 50px;
+}
+
+.pt_82 {
+    padding-top: 82px;
+}
+
+.pt_20 {
+    padding-top: 20px;
+}
+
+.gap_32 {
+    gap: 32px;
+}
+
+.pb_69 {
+    padding-bottom: 69px;
+}
+
+.py_20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pt_150 {
+    padding-top: 150px;
+}
+
 /*-------------- normal css prop --------------------*/
 
 .faq_container {
@@ -402,6 +431,14 @@
     padding-right: 12px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.footer-container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .tools_bg_img {
@@ -415,10 +452,21 @@
     color: var(--primary-color);
 }
 
+.orange_box {
+    transform: translate(0px, 150px);
+}
+
 .paragraph_txt span {
     font-weight: 600;
     color: var(--black-color);
     opacity: 1;
+}
+
+.footer_underline {
+    width: 100%;
+    height: 1px;
+    background-color: var(--white-color);
+    opacity: 90%;
 }
 
 .bg_color {
@@ -438,6 +486,7 @@
     transition: all 300ms linear;
 }
 
+.btn-1,
 .btn_1 {
     font-size: var(--fs-16);
     line-height: var(--lh-19);
@@ -460,8 +509,23 @@
     position: relative;
 }
 
+.max-w-669 {
+    max-width: 669px;
+}
+
+.max-w-615 {
+    max-width: 615px;
+}
+
 .transition {
     transition: all 300ms linear;
+}
+
+.suscribe_container {
+    max-width: 1140px;
+    min-height: 381px;
+    background-color: var(--primary-color);
+    border-radius: 21px;
 }
 
 .max-w-766 {
@@ -545,6 +609,10 @@
     background-color: var(--white-color);
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
+    transform: scale(1.11);
+}
+
+.btn-1:hover {
     transform: scale(1.11);
 }
 
@@ -718,5 +786,53 @@
 
     .hidden-img {
         display: block;
+    }
+
+    .suscribe_container {
+        min-height: 400px;
+    }
+
+    .sm-fs-30 {
+        font-size: var(--fs-30);
+    }
+
+    .sm-lh-40 {
+        line-height: var(--lh-40);
+    }
+
+    .text_center {
+        text-align: center;
+    }
+
+    .sm-fs-40 {
+        font-size: var(--fs-40);
+    }
+
+    .sm-fs-20 {
+        font-size: var(--fs-20);
+    }
+
+    .flex-prop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sm-lh-54{
+        line-height: lh-54;
+    }
+}
+
+@media (min-width:768px) {
+    .px-135 {
+        padding-left: 135px;
+        padding-right: 135px;
+    }
+}
+
+@media (min-width:992px) {
+
+    .px-235 {
+        padding-left: 235px;
+        padding-right: 235px;
     }
 }

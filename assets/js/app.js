@@ -1,3 +1,6 @@
+// make cross in navbar hamburger-------------
+
+let body = document.body;
 let menuIcon = document.querySelector(".menuIcon");
 let menuList = document.querySelector(".menuBar");
 let line_1 = document.querySelector(".first-line")
@@ -26,17 +29,19 @@ function line() {
 }
 
 
-
+// add show class in nav links--------------
 menuIcon.addEventListener("click", () => {
     menuList.classList.toggle("show");
     if (menuList.classList.contains("show")) {
-        cross()
+        cross();
+        body.style.overflow = "hidden";
     } else {
-        line()
+        line();
+        body.style.overflow = "auto";
     }
 })
 
-
+// first lick slider----------------
 $('.slider').slick({
     dots: true,
     infinite: true,
@@ -84,3 +89,47 @@ $('.slider').slick({
         }
     ]
 });
+
+
+// accordina--------------------------
+let accordian = document.querySelectorAll(".accror_itm");
+document.querySelector('.accrdian-img').style.transform = "rotate(180deg)";
+document.querySelector('.hidden-text').style.display = "block";
+
+accordian.forEach(Element => {
+    let img = Element.querySelector(".accrdian-img");
+    let clickable_accord = Element.querySelector(".accordian-head");
+    let hidden_txt = Element.querySelector(".hidden-text");
+    clickable_accord.addEventListener("click", () => {
+        accordian.forEach(otherelement => {
+            if (otherelement !== Element) {
+                let img = otherelement.querySelector(".accrdian-img");
+                let hidden_txt = otherelement.querySelector(".hidden-text");
+                img.style.transform = "rotate(0deg)";
+                hidden_txt.style.display = "none";
+            }
+
+        })
+        let txt_style = window.getComputedStyle(hidden_txt).display;
+        if (txt_style === "none") {
+            hidden_txt.style.display = "block";
+            img.style.transform = "rotate(180deg)";
+        } else {
+            hidden_txt.style.display = "none";
+            img.style.transform = "rotate(0deg)";
+        }
+    })
+
+})
+
+// navlinks hidden show class----------
+
+let navLinks = document.querySelectorAll(".nav_links")
+
+navLinks.forEach(links => {
+    links.addEventListener("click", () => {
+        menuList.classList.remove("show");
+        line();
+        body.style.overflow = "auto";
+    });
+})
