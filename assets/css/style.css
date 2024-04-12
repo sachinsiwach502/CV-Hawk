@@ -702,6 +702,10 @@
     transform: scale(1.11);
 }
 
+.social_media:hover {
+    transform: scale(1.1);
+}
+
 .btn-1:hover {
     transform: scale(1.11);
 }
