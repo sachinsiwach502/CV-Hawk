@@ -673,6 +673,10 @@
     opacity: 1;
 }
 
+.footer-links {
+    position: relative;
+    transition: all 300ms linear;
+}
 
 /*-------------------- hover ----------------*/
 .nav_links:hover {
@@ -722,6 +726,14 @@
     transition: all 300ms linear;
 }
 
+.footer-links:hover::before {
+    width: 100%;
+    transition: all 300ms linear;
+}
+
+.footer-links:hover {
+    opacity: 1 !important;
+}
 
 /* ----------------After Before------------ */
 .nav_links::before {
@@ -749,6 +761,17 @@
     left: 5px;
     bottom: 0;
     transform: translate(20px, 32px);
+}
+
+.footer-links::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    height: 2px;
+    width: 0;
+    background-color: var(--primary-color);
 }
 
 /*--------------- bg_img -----------------*/
