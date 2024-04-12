@@ -28,6 +28,7 @@
     --black-color: #000000;
     --white-color: #ffff;
     --tools-bg-color: #F9F9F9;
+    --blue-color: #0000EE;
 
     --fs-10: 10px;
     --fs-14: 14px;
@@ -664,6 +665,10 @@
     opacity: 10%;
 }
 
+.paragraph_txt span {
+    transition: all 200ms linear;
+}
+
 .slick-dots li button {
     display: none !important;
 }
@@ -733,6 +738,12 @@
 
 .footer-links:hover {
     opacity: 1 !important;
+}
+
+.paragraph_txt span:hover {
+    text-decoration: underline !important;
+    cursor: pointer;
+    color: var(--blue-color);
 }
 
 /* ----------------After Before------------ */
