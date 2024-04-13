@@ -30,6 +30,7 @@
     --tools-bg-color: #F9F9F9;
     --blue-color: #0000EE;
     --theme-bg-color: #FAF9F9;
+    --nav-underline: rgba(0, 0, 0, 1);
 
     --fs-10: 10px;
     --fs-14: 14px;
@@ -445,9 +446,20 @@
     margin-right: auto;
 }
 
+.slider-itm_bg_color {
+    background-color: var(--white-color);
+}
+
 .text_underline {
     position: relative;
 }
+
+.about,
+.help,
+.home {
+    position: relative;
+}
+
 
 .footer-container {
     max-width: 1120px;
@@ -468,6 +480,26 @@
 
 .theme-bg-color {
     background-color: var(--theme-bg-color);
+}
+
+.news_1 {
+    left: 0;
+    top: 0;
+}
+
+.news_2 {
+    left: 0;
+    bottom: 0;
+}
+
+.news_3 {
+    right: 0;
+    top: 0;
+}
+
+.news_4 {
+    right: 0;
+    bottom: 0;
 }
 
 .paragraph_txt span {
@@ -917,53 +949,37 @@
     .menuIcon:hover span {
         background-color: var(--primary-color);
     }
-}
 
-@media (min-width:768px) and (max-width:992px) {
-    .underline-1 {
-        top: 40%;
-        height: 2px;
-        background-color: var(--black-color);
-        width: 291px;
+    .help::before {
+        content: "";
+        position: absolute;
+        width: 274px;
+        height: 1px;
+        background-color: var(--nav-underline);
+        bottom: -15px;
+
     }
 
-    .underline-2 {
-        top: 50%;
-        height: 2px;
-        background-color: var(--black-color);
-        width: 291px;
+    .home::before {
+        content: "";
+        position: absolute;
+        width: 274px;
+        height: 1px;
+        background-color: var(--nav-underline);
+        bottom: -15px;
     }
 
-    .underline-3 {
-        top: 60%;
-        height: 2px;
-        background-color: var(--black-color);
-        width: 291px;
+    .about::before {
+        content: "";
+        position: absolute;
+        width: 274px;
+        height: 1px;
+        background-color: var(--nav-underline);
+        bottom: -15px;
     }
 }
 
 @media (min-width:576px) and (max-width:768px) {
-    .underline-1 {
-        top: 33%;
-        height: 2px;
-        background-color: var(--black-color);
-        width: 291px;
-    }
-
-    .underline-2 {
-        top: 43%;
-        height: 2px;
-        background-color: var(--black-color);
-        width: 291px;
-    }
-
-    .underline-3 {
-        top: 53%;
-        height: 2px;
-        background-color: var(--black-color);
-        width: 291px;
-    }
-
     .prev {
         bottom: 4%;
         left: 40%;
@@ -995,27 +1011,6 @@
 
     .pt_30 {
         padding-top: 30px;
-    }
-
-    .underline-1 {
-        top: 43%;
-        height: 2px;
-        background-color: var(--black-color);
-        width: 291px;
-    }
-
-    .underline-2 {
-        top: 53%;
-        height: 2px;
-        background-color: var(--black-color);
-        width: 291px;
-    }
-
-    .underline-3 {
-        top: 63%;
-        height: 2px;
-        background-color: var(--black-color);
-        width: 291px;
     }
 
     .hidden-img {
