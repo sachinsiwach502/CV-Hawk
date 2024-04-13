@@ -432,9 +432,7 @@
     padding-bottom: 80px;
 }
 
-.mt-37 {
-    margin-top: 37px !important;
-}
+
 
 /*-------------- normal css prop --------------------*/
 
@@ -960,6 +958,10 @@
 
     }
 
+    .max-lg-mt-37 {
+        margin-top: 37px !important;
+    }
+
     .home::before {
         content: "";
         position: absolute;
@@ -1121,6 +1123,10 @@
     .px-235 {
         padding-left: 235px;
         padding-right: 235px;
+    }
+
+    .lg-mt-37 {
+        margin-top: 37px !important;
     }
 
 }
