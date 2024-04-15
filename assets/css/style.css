@@ -436,6 +436,18 @@
     margin-right: auto;
 }
 
+.cv_txt {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
 [data-aos^=zoom][data-aos^=zoom].aos-animate {
     transition-delay: 3.11s !important;
 }
