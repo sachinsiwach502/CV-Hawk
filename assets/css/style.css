@@ -367,9 +367,7 @@
     padding-top: 151px;
 }
 
-.pt-141 {
-    padding-top: 141px;
-}
+
 
 .pt_35 {
     padding-top: 35px;
@@ -1264,6 +1262,9 @@
     .lg-mt-37 {
         margin-top: 37px !important;
     }
+        .pt-141 {
+            padding-top: 141px;
+        }
 
     .pb_160 {
         padding-bottom: 160px;
