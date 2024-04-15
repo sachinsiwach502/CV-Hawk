@@ -436,6 +436,10 @@
     margin-right: auto;
 }
 
+[data-aos^=zoom][data-aos^=zoom].aos-animate {
+    transition-delay: 3.11s !important;
+}
+
 .scroll_to_top {
     width: 60px;
     height: 60px;
@@ -1262,9 +1266,10 @@
     .lg-mt-37 {
         margin-top: 37px !important;
     }
-        .pt-141 {
-            padding-top: 141px;
-        }
+
+    .pt-141 {
+        padding-top: 141px;
+    }
 
     .pb_160 {
         padding-bottom: 160px;

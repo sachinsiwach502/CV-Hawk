@@ -231,3 +231,6 @@ scroll_top.addEventListener("click", () => {
         top: 0, behaviour: "smooth",
     })
 });
+
+// aos Animation 
+  AOS.init();
